@@ -2,8 +2,8 @@
 
 CC       = gcc
 TMPDIR   = obj
-OBJ      = obj/exceptio.o obj/genlib.o obj/graphics.o obj/random.o obj/simpio.o obj/strlib.o obj/main.o obj/imgui.o obj/linkedlist.o obj/enhancedGUI.o
-LINKOBJ  = obj/exceptio.o obj/genlib.o obj/graphics.o obj/random.o obj/simpio.o obj/strlib.o obj/main.o obj/imgui.o obj/linkedlist.o obj/enhancedGUI.o
+OBJ      = obj/exception.o obj/genlib.o obj/graphics.o obj/random.o obj/simpio.o obj/strlib.o obj/main.o obj/imgui.o obj/linkedlist.o obj/enhancedGUI.o
+LINKOBJ  = obj/exception.o obj/genlib.o obj/graphics.o obj/random.o obj/simpio.o obj/strlib.o obj/main.o obj/imgui.o obj/linkedlist.o obj/enhancedGUI.o
 LIBS     = -L"C:/Program Files/Dev-Cpp/MinGW32/lib" -L"C:/Program Files/Dev-Cpp/MinGW32/mingw32/lib" -static-libstdc++ -static-libgcc -mwindows
 INCS     = -I"C:/Program Files/Dev-Cpp/MinGW32/include" -I"./lib/" -I"./lib/libgraphics" -I"./lib/simpleGUI"
 BIN      = main.exe
@@ -25,8 +25,8 @@ $(BIN): $(TMPDIR) $(OBJ)
 $(TMPDIR):
 	mkdir $(TMPDIR)
 
-obj/exceptio.o: ./lib/libgraphics/exceptio.c
-	$(CC) -c ./lib/libgraphics/exceptio.c -o obj/exceptio.o $(CFLAGS)
+obj/exception.o: ./lib/libgraphics/exception.c
+	$(CC) -c ./lib/libgraphics/exception.c -o obj/exception.o $(CFLAGS)
 
 obj/genlib.o: ./lib/libgraphics/genlib.c
 	$(CC) -c ./lib/libgraphics/genlib.c -o obj/genlib.o $(CFLAGS)
