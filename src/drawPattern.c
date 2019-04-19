@@ -2,6 +2,7 @@
  * 文件名: drawPattern.c
  * -------------
  * 利用增加了角度支持的图形库画出指定图形.
+ * 增强模块位置：lib/enhancedGUI.h
  */
 
 #include "graphics.h"
