@@ -1,3 +1,3 @@
 # projectGUI
 
-Finished: burg, pattern, paint
+Finished: burg, pattern, paint, text-input, kochsnow
